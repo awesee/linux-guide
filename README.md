@@ -1,4 +1,4 @@
-# [Linux 指导](https://openset.github.io/Linux-guide/)
+# [Linux 指导](https://openset.github.io/linux-guide/)
 Linux学习资料索引
 
 ## 目录
