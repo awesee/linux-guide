@@ -14,8 +14,33 @@
 注释内容...
 EOF
 
-# 输出
-echo "Hello World !"
+# echo命令
+# 双引号完全可以省略
+echo string
+# 显示普通字符串
+echo "It is a string"   # It is a string
+# 显示转义字符
+echo "\"Hello World!\"" # "Hello World!"
+# 显示变量
+name=Sandy
+echo "Hi, $name"        # Hi, Sandy
+# 显示换行
+echo -e "OK! \n" # -e 开启转义
+echo "It it a test"
+# OK!
+#
+# It it a test
+# 显示不换行
+echo -e "OK! \c" # -e 开启转义 \c 不换行
+echo "It is a test"
+# OK! It is a test
+# 显示结果定向至文件
+echo "It is a test" > myfile
+# 原样输出字符串，不进行转义或取变量(用单引号)
+echo '$name\"'
+# 显示命令执行结果
+echo `date`     # Fri Aug 3 17:16:42 CST 2018
+echo $(date)    # Fri Aug 3 17:17:59 CST 2018
 
 # ------------------------------------------------------------------------
 # 变量类型
